@@ -101,7 +101,7 @@ const signup = async (req, res, next) => {
   }
   transporter.sendMail({
     to : createdUser.email,
-    from: "we-dont-waste-food@king.buzz",
+    from: "rajivnmurthy09@gmail.com",
     subject:"Registration Successful",
     html:"<h1>welcome to food waste connect</h1>"
   })
@@ -207,7 +207,7 @@ const resetPassword = (req,res,next) => {
             user.save().then((result) => {
             transporter.sendMail({
               to:user.email,
-              from:"we-dont-waste-food@king.buzz",
+              from:"rajivnmurthy09@gmail.com",
               subject:"Password Reset",
               html: `
               <p>You requested for password reset</p>

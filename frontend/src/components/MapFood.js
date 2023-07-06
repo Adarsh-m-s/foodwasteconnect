@@ -5,8 +5,8 @@ class MapFood extends Component {
 	constructor() {
 		super();
 		this.state = {
-            lat: 22.989333000000002,
-            lng: 72.62911440209957
+            lat: 12.5173,
+            lng: 76.8800
 		};
 	  }
 	render() {

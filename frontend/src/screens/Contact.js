@@ -16,7 +16,7 @@ function Contact() {
                 integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
                 crossOrigin="anonymous"
             />
-            <title>We Don't Waste Food</title>
+            <title>Food Waste Connect</title>
             {/* navbar */}
             <div className="container my-4">
                 <h2>Contact Us</h2>
@@ -40,10 +40,10 @@ function Contact() {
                             className="form-control"
                             id="exampleFormControlSelect1"
                         >
-                            <option>Query 1</option>
-                            <option>Query 2</option>
-                            <option>Query 3</option>
-                            <option>Query 4</option>
+                            <option>Food not delivered</option>
+                            <option>Food quality was bad</option>
+                            <option>Food request was rejected for no reason</option>
+                            <option>Food was delivered late</option>
                         </select>
                     </div>
                     <div className="form-group row">

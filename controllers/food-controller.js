@@ -175,7 +175,7 @@ const acceptfood = async (req, res, next) => {
       await food.save();
       transporter.sendMail({
         to : donator.email,
-        from: "we-dont-waste-food@king.buzz",
+        from: "rajivnmurthy09@gmail.com",
         subject:`${receiver.fullname} has Requested for ${food.name}`,
         html:`<div><h1>${receiver.fullname} has Requested for ${food.name}</h1>
               <img src = ${food.Url} width = "200" height = "200" ><br><br>
@@ -187,7 +187,7 @@ const acceptfood = async (req, res, next) => {
       })
       transporter.sendMail({
         to : receiver.email,
-        from: "we-dont-waste-food@king.buzz",
+        from: "rajivnmurthy09@gmail.com",
         subject:`You have successfully requested ${food.name} from ${donator.fullname}`,
         html:`<div><h1>You have successfully requested ${food.name} from ${donator.fullname}</h1>
               <img src = ${food.Url} width = "200" height = "200" ><br><br>
@@ -302,7 +302,7 @@ const receivedfood = async (req, res, next) => {
       await food.save();
       transporter.sendMail({
         to : donator.email,
-        from: "we-dont-waste-food@king.buzz",
+        from: "rajivnmurthy09@gmail.com",
         subject:`Congratulations, ${donator.fullname}`,
         html:`<div><h1>We got your confirmation that ${receiver.fullname} has collected ${food.name} succesfully.</h1>
               <img src = ${food.Url} width = "200" height = "200" ><br><br>
@@ -313,7 +313,7 @@ const receivedfood = async (req, res, next) => {
       })
       transporter.sendMail({
         to : receiver.email,
-        from: "we-dont-waste-food@king.buzz",
+        from: "rajivnmurthy09@gmail.com",
         subject:`Congratulation ${receiver.fullname}`,
         html:`<div><h1>${donator.fullname} has confirmed the pickup of ${food.name} succesfully.</h1>
               <img src = ${food.Url} width = "200" height = "200" ><br><br>
@@ -348,7 +348,7 @@ const cancelledfood = async (req, res, next) => {
     try {
       transporter.sendMail({
         to : donator.email,
-        from: "we-dont-waste-food@king.buzz",
+        from: "rajivnmurthy09@gmail.com",
         subject:`You have rejected the request of ${food.name} by ${receiver.fullname}`,
         html:`<div><h1>You have rejected the request of ${food.name} by ${receiver.fullname}</h1>
               <img src = ${food.Url} width = "200" height = "200" ><br><br>
@@ -359,7 +359,7 @@ const cancelledfood = async (req, res, next) => {
       })
       transporter.sendMail({
         to : receiver.email,
-        from: "we-dont-waste-food@king.buzz",
+        from: "rajivnmurthy09@gmail.com",
         subject:`${donator.fullname} had rejected your request of ${food.name}`,
         html:`<div><h1>${donator.fullname} had rejeted your request of ${food.name}</h1>
               <p>Reason of Rejection: ${req.body.rejmessage}</p>

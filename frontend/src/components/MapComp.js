@@ -12,10 +12,10 @@ class MapComp extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			address: 'Green Block, Navratna Apt, CTM Cross Rd, Hatkeshwar',
-			city: 'Ahmedabad',
-			area: 'Hatkeshwar',
-			state: 'Gujarat',
+			address: 'Mandya',
+			city: 'Mandya',
+			area: 'Chamundeshwari Nagar',
+			state: 'Karnataka',
 			mapPosition: {
 				lat: this.props.center.lat,
 				lng: this.props.center.lng
